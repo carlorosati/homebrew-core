@@ -77,6 +77,7 @@ class Rust < Formula
     args << "--disable-rpath" if build.head?
     args << "--enable-clang" if ENV.compiler == :clang
     args << "--llvm-root=#{Formula["llvm"].opt_prefix}" if build.with? "llvm"
+    args << "--enable-sccache"
     if build.head?
       args << "--release-channel=nightly"
     else
