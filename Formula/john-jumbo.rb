@@ -1,6 +1,7 @@
 class JohnJumbo < Formula
   desc "Enhanced version of john, a UNIX password cracker"
   homepage "http://www.openwall.com/john/"
+  head "https://github.com/magnumripper/JohnTheRipper.git"
 
   stable do
     url "http://openwall.com/john/j/john-1.8.0-jumbo-1.tar.xz"
